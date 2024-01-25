@@ -1,0 +1,32 @@
+:root {
+  --border-radius: 5px;
+  --padding: 30px 40px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.box {
+  width: 600px;
+  background-color: var(--selection);
+  border-radius: var(--border-radius);
+  padding: var(--padding);
+  box-shadow: var(--box-shadow);
+}
+
+.img {
+  width: 75%;
+  border-radius: var(--border-radius);
+}
+
+.img2 {
+  width: 45%;
+  border-radius: var(--border-radius);
+}
+
+.without-override {
+  color: var(--purple);
+}
+
+.with-override {
+  --purple: #9b59b6;
+  color: var(--purple);
+}
