@@ -11,6 +11,9 @@
   --purple: #bd93f9;
   --red: #ff5555;
   --yellow: #f1fa8c;
+  --border-radius: 5px;
+  --padding: 30px 40px;
+  --box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 * {
