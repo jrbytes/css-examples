@@ -1,0 +1,17 @@
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.resizer {
+  background-color: var(--comment);
+  padding: 10px;
+  resize: both;
+  overflow: auto;
+  width: 100px;
+  height: 100px;
+  max-width: 100%;
+  max-height: 100%;
+}

@@ -1,0 +1,58 @@
+.box {
+  display: flex;
+  flex-direction: column; 
+  gap: 60px;
+  background-color: var(--selection);
+  border-radius: var(--border-radius);
+  padding: 40px 36px;
+  box-shadow: var(--box-shadow);
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: help;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 6px;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 200px;
+  background-color: var(--comment);
+  color: #fff;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 11px;
+  transition: 0.3s;
+  position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
+
+.tooltip.top .tooltiptext.top {
+  width: 120px;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip.bottom .tooltiptext.bottom {
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip.left .tooltiptext.left {
+  right: 100%;
+}
+
+.tooltip.right .tooltiptext.right {
+  left: 100%;
+}

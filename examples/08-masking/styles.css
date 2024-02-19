@@ -1,0 +1,33 @@
+.box {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--selection);
+  border-radius: var(--border-radius);
+  padding: 40px 36px;
+  box-shadow: var(--box-shadow);
+
+  img {
+    width: 300px;
+    height: 520px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+  }
+}
+
+.images-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.masking:hover {
+  -webkit-mask-image: url(../../assets/astronaut.png);
+  mask-image: url(../../assets/astronaut.png);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-size: 300px;
+}
